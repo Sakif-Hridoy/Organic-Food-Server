@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "node-modules": "^1.0.1"
+  },
+  "name": "organic-food-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sakif-Hridoy/Organic-Food-Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sakif-Hridoy/Organic-Food-Server/issues"
+  },
+  "homepage": "https://github.com/Sakif-Hridoy/Organic-Food-Server#readme",
+  "description": ""
+}
