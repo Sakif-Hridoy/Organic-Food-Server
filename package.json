@@ -11,6 +11,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start":"node index.js",
+    "start:dev":"nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +25,8 @@
     "url": "https://github.com/Sakif-Hridoy/Organic-Food-Server/issues"
   },
   "homepage": "https://github.com/Sakif-Hridoy/Organic-Food-Server#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
