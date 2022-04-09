@@ -47,6 +47,17 @@ app.get('/products/:name', (req, res) => {
       })
 })
 
+app.post('/addOrder',(req,res)=>{
+  const addOrder = req.body;
+  console.log(addOrder)
+  eventCollection.insertOne(addOrder)
+  .then(result => {
+    console.log('inserted ID',result.insertedId)
+    res.send(result.insertedCount>0)
+  }) 
+})
+
+
   
 });
 
