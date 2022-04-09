@@ -39,6 +39,13 @@ app.post('/addProduct',(req,res)=>{
   })
 })
 
+app.get('/products/:name', (req, res) => {
+
+  eventCollection.find({ name: req.params.name })
+      .toArray((err, document) => {
+          res.send(document);
+      })
+})
 
   
 });
