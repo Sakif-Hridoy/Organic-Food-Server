@@ -58,6 +58,15 @@ app.post('/addOrder',(req,res)=>{
 })
 
 
+app.get('/orders',(req,res)=>{
+  const email = req.query.email;
+  eventCollection.find({email:req.query.email})
+  .toArray((err,result)=>{
+    res.send(result)
+  })
+})
+
+
   
 });
 
