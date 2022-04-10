@@ -91,6 +91,4 @@ app.post('/http://localhost:4545/products',(req,res)=>{
   res.send('Got a POST')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+app.listen(process.env.PORT || port)
