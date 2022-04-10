@@ -1,6 +1,7 @@
 const express = require('express');
 // const ObjectId = require('mongodb').ObjectId;
 const cors = require('cors');
+const ObjectId=require('mongodb').ObjectId;
 const bodyParser = require('body-parser');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const res = require('express/lib/response');
@@ -64,6 +65,16 @@ app.get('/orders',(req,res)=>{
   .toArray((err,result)=>{
     res.send(result)
   })
+})
+
+
+app.delete("/products/:id",(req,res)=>{
+  console.log(req.params.id)
+  eventCollection.deleteOne({_id: ObjectId(req.params.id)})
+  .then(result=>{
+          
+    console.log(result)
+})
 })
 
 
